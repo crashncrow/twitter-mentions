@@ -1,0 +1,436 @@
+body {margin: 0px;overflow: hidden;}
+#webglviewer {bottom: 0;left: 0;position: absolute;right: 0;top: 0;z-index: -1;}
+#reader{display:none}
+video{position: absolute;top:2000px}
+
+
+h2 {
+  color: black;
+  display: block;
+  padding: 20px;
+  font: bold 30px Helvetica;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.hovertown span {
+  -webkit-transition: all 0.9s ease;
+  -moz-transition:    all 0.9s ease;
+  -o-transition:      all 0.9s ease;
+  transition:         all 0.9s ease;
+}
+.hovertown span:hover {
+  text-shadow: 0 0 50px black;
+  color: transparent;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition:    all 0.2s ease;
+  -o-transition:      all 0.2s ease;
+  transition:         all 0.2s ease;
+}
+
+@-webkit-keyframes blackblur {
+  from { text-shadow: 0 0 72px black; color: transparent; }
+  to   { text-shadow: 0;              color: black;       }
+}
+
+.smokemonster span:nth-of-type(1)  { -webkit-animation: blackblur 2s       1 alternate; }
+.smokemonster span:nth-of-type(2)  { -webkit-animation: blackblur 2s 0.1s  1 alternate; }
+.smokemonster span:nth-of-type(3)  { -webkit-animation: blackblur 2s 0.15s 1 alternate; }
+.smokemonster span:nth-of-type(4)  { -webkit-animation: blackblur 2s 0.2s  1 alternate; }
+.smokemonster span:nth-of-type(5)  { -webkit-animation: blackblur 2s 0.25s 1 alternate; }
+.smokemonster span:nth-of-type(6)  { -webkit-animation: blackblur 2s 0.3s  1 alternate; }
+.smokemonster span:nth-of-type(7)  { -webkit-animation: blackblur 2s 0.35s 1 alternate; }
+.smokemonster span:nth-of-type(8)  { -webkit-animation: blackblur 2s 0.4s  1 alternate; }
+.smokemonster span:nth-of-type(9)  { -webkit-animation: blackblur 2s 0.45s 1 alternate; }
+.smokemonster span:nth-of-type(10) { -webkit-animation: blackblur 2s 0.5s  1 alternate; }
+.smokemonster span:nth-of-type(11) { -webkit-animation: blackblur 2s 0.55s 1 alternate; }
+.smokemonster span:nth-of-type(12) { -webkit-animation: blackblur 2s 0.6s  1 alternate; }
+
+@-webkit-keyframes fun-1 {
+  from { text-shadow: 0 0 72px red; color: transparent; }
+  to   { text-shadow: 0;            color: black;       }
+}
+@-webkit-keyframes fun-2 {
+  from { text-shadow: 0 0 22px blue; color: transparent; }
+  to   { text-shadow: 0;            color: black;        }
+}
+@-webkit-keyframes fun-3 {
+  from { text-shadow: 0 0 152px green; color: transparent; }
+  to   { text-shadow: 0;            color: black;          }
+}
+@-webkit-keyframes fun-4 {
+  from { text-shadow: 0 0 102px cyan; color: transparent; }
+  to   { text-shadow: 0;            color: black;         }
+}
+@-webkit-keyframes fun-5 {
+  from { text-shadow: 0 0 222px magenta; color: transparent; }
+  to   { text-shadow: 0;            color: black;            }
+}
+@-webkit-keyframes fun-6 {
+  from { text-shadow: 0 0 92px yellow; color: transparent; }
+  to   { text-shadow: 0;            color: black;          }
+}
+.sparklemaster { color: white; }
+.sparklemaster span:nth-of-type(1)  { -webkit-animation: fun-1 2s 0.2s  1 alternate; }
+.sparklemaster span:nth-of-type(2)  { -webkit-animation: fun-2 2s 3.9s  1 alternate; }
+.sparklemaster span:nth-of-type(3)  { -webkit-animation: fun-3 2s 2.65s 1 alternate; }
+.sparklemaster span:nth-of-type(4)  { -webkit-animation: fun-4 2s 2.2s  1 alternate; }
+.sparklemaster span:nth-of-type(5)  { -webkit-animation: fun-5 2s 1.25s 1 alternate; }
+.sparklemaster span:nth-of-type(6)  { -webkit-animation: fun-6 2s 2.3s  1 alternate; }
+.sparklemaster span:nth-of-type(7)  { -webkit-animation: fun-1 2s 3.35s 1 alternate; }
+.sparklemaster span:nth-of-type(8)  { -webkit-animation: fun-2 2s 2.4s  1 alternate; }
+.sparklemaster span:nth-of-type(9)  { -webkit-animation: fun-3 2s 1.45s 1 alternate; }
+.sparklemaster span:nth-of-type(10) { -webkit-animation: fun-4 2s 3.5s  1 alternate; }
+.sparklemaster span:nth-of-type(11) { -webkit-animation: fun-5 2s 1.55s 1 alternate; }
+.sparklemaster span:nth-of-type(12) { -webkit-animation: fun-6 2s 2.6s  1 alternate; }
+
+.textshadow .foreverblur {
+   text-shadow: 0 0 32px white;
+   color: transparent;
+}
+
+#jquerybuddy1 span {
+    z-index: 200;
+    text-shadow: 0 0 4px rgba(0,100,0,1);
+    color: transparent;
+}
+
+#jquerybudd1y{
+    z-index: 200;
+}
+
+#jquerybuddy2 span {
+    z-index: 200;
+    text-shadow: 0 0 4px rgba(0,100,0,1);
+    color: transparent;
+}
+
+#jquerybuddy2{
+    z-index: 200;
+}
+
+section { padding: 10px 100px;  text-align: center;}
+
+section:nth-child(odd) { background: #eee; }
+section:nth-child(even) { background: #333; }
+
+
+/* BUSCANDO - USERNAME */
+#out{
+    position: absolute;
+    top: calc(50% - 35px);
+    font-size: 25px;
+    width: 100%;
+    background: #fff;
+    height: 70px;
+    color: #000;
+    line-height: 70px;
+    padding-left: 55px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    z-index: 101;
+}
+
+#out2{
+    position: absolute;
+    top: calc(50% - 35px);
+    font-size: 25px;
+    width: 100%;
+    height: 70px;
+    color: #000;
+    line-height: 70px;
+    padding-left: calc(50% + 55px);
+    font-family: Helvetica, Arial, Sans-Serif;
+    z-index: 101;
+}
+
+
+
+/* LOADER */
+
+.cssload-loader {
+	display: block;
+	margin:0 auto;
+	width: 29px;
+	height: 29px;
+	position: absolute;
+    top: calc(50% - 18px);
+    z-index: 102;
+    left: 10px;
+	border: 4px solid rgb(0,0,0);
+	animation: cssload-loader 2.3s infinite ease;
+		-o-animation: cssload-loader 2.3s infinite ease;
+		-ms-animation: cssload-loader 2.3s infinite ease;
+		-webkit-animation: cssload-loader 2.3s infinite ease;
+		-moz-animation: cssload-loader 2.3s infinite ease;
+}
+
+.cssload-loader2 {
+    left: calc(50% + 10px);
+}
+
+.cssload-loader-inner {
+	vertical-align: top;
+	display: inline-block;
+	width: 100%;
+	background-color: rgb(0,0,0);
+	animation: cssload-loader-inner 2.3s infinite ease-in;
+		-o-animation: cssload-loader-inner 2.3s infinite ease-in;
+		-ms-animation: cssload-loader-inner 2.3s infinite ease-in;
+		-webkit-animation: cssload-loader-inner 2.3s infinite ease-in;
+		-moz-animation: cssload-loader-inner 2.3s infinite ease-in;
+}
+
+
+
+
+
+@keyframes cssload-loader {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	25% {
+		transform: rotate(180deg);
+	}
+
+	50% {
+		transform: rotate(180deg);
+	}
+
+	75% {
+		transform: rotate(360deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-o-keyframes cssload-loader {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	25% {
+		transform: rotate(180deg);
+	}
+
+	50% {
+		transform: rotate(180deg);
+	}
+
+	75% {
+		transform: rotate(360deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-ms-keyframes cssload-loader {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	25% {
+		transform: rotate(180deg);
+	}
+
+	50% {
+		transform: rotate(180deg);
+	}
+
+	75% {
+		transform: rotate(360deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes cssload-loader {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	25% {
+		transform: rotate(180deg);
+	}
+
+	50% {
+		transform: rotate(180deg);
+	}
+
+	75% {
+		transform: rotate(360deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes cssload-loader {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	25% {
+		transform: rotate(180deg);
+	}
+
+	50% {
+		transform: rotate(180deg);
+	}
+
+	75% {
+		transform: rotate(360deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes cssload-loader-inner {
+	0% {
+		height: 0%;
+	}
+
+	25% {
+		height: 0%;
+	}
+
+	50% {
+		height: 100%;
+	}
+
+	75% {
+		height: 100%;
+	}
+
+	100% {
+		height: 0%;
+	}
+}
+
+@-o-keyframes cssload-loader-inner {
+	0% {
+		height: 0%;
+	}
+
+	25% {
+		height: 0%;
+	}
+
+	50% {
+		height: 100%;
+	}
+
+	75% {
+		height: 100%;
+	}
+
+	100% {
+		height: 0%;
+	}
+}
+
+@-ms-keyframes cssload-loader-inner {
+	0% {
+		height: 0%;
+	}
+
+	25% {
+		height: 0%;
+	}
+
+	50% {
+		height: 100%;
+	}
+
+	75% {
+		height: 100%;
+	}
+
+	100% {
+		height: 0%;
+	}
+}
+
+@-webkit-keyframes cssload-loader-inner {
+	0% {
+		height: 0%;
+	}
+
+	25% {
+		height: 0%;
+	}
+
+	50% {
+		height: 100%;
+	}
+
+	75% {
+		height: 100%;
+	}
+
+	100% {
+		height: 0%;
+	}
+}
+
+@-moz-keyframes cssload-loader-inner {
+	0% {
+		height: 0%;
+	}
+
+	25% {
+		height: 0%;
+	}
+
+	50% {
+		height: 100%;
+	}
+
+	75% {
+		height: 100%;
+	}
+
+	100% {
+		height: 0%;
+	}
+}
+
+
+
+
+.progress_bar {
+  height: 15px;
+  background: orange;
+  width: 0%;
+  -moz-transition: all 4s ease;
+  -moz-transition-delay: 1s;
+  -webkit-transition: all 4s ease;
+  -webkit-transition-delay: 1s;
+  transition: all 4s ease;
+  transition-delay: 1s;
+}
+
+canvas {
+-webkit-transition:-webkit-filter 0.4s ease-in-out;
+}
+
+.invert {
+ -webkit-filter: invert(1);
+}
+
+.sepia{
+-webkit-filter: sepia(1);
+}
+
+.blackandwhite {
+-webkit-filter: grayscale(1);
+}

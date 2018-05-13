@@ -1,0 +1,22 @@
+web:
+  build: .
+  volumes:
+    # This is a link from your docker-host where your project lives.
+    # If you are on a mac/windows, it will need to be mapped properly to the docker VM
+    - ~/Sites/twitter-mentions:/data/www
+  ports:
+    - 80:80
+  links:
+    - mysql
+  environment:
+    MYSQL_DATABASE: website
+    MYSQL_USER: web
+    MYSQL_PASSWORD: webwebwebweb
+
+mysql:
+  image: mysql:5.7
+  environment:
+    MYSQL_ROOT_PASSWORD: root
+    MYSQL_DATABASE: website
+    MYSQL_USER: web
+    MYSQL_PASSWORD: webwebwebweb

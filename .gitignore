@@ -1,0 +1,6 @@
+/vendor/
+/log/
+.idea*
+.vagrant*
+.DS_Store
+composer.lock
