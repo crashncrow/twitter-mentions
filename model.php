@@ -30,7 +30,7 @@ class Model{
 			}
 
 			$sql = 'CREATE TABLE `statuses` (
-				  `id_twit` varchar(45) NOT NULL,
+				  `id_twit` int(11) NOT NULL,
 				  `query` varchar(45) NOT NULL,
 				  `screen_name` varchar(45) NOT NULL,
 				  `text` varchar(400) DEFAULT NULL,
@@ -42,8 +42,8 @@ class Model{
 				  `retweeted_status` varchar(140) DEFAULT NULL,
 				  `retweeted_status_user` varchar(45) DEFAULT NULL,
 				  `is_quote_status` varchar(45) DEFAULT NULL,
-				  `retweet_count` varchar(45) DEFAULT NULL,
-				  `favorite_count` varchar(45) DEFAULT NULL,
+				  `retweet_count` int(11) DEFAULT NULL,
+				  `favorite_count` int(11) DEFAULT NULL,
 				  `hashtags` varchar(2000) DEFAULT NULL,
 				  `mentions` varchar(2000) DEFAULT NULL,
 				  `lang` varchar(45) DEFAULT NULL,
@@ -51,7 +51,7 @@ class Model{
 				  PRIMARY KEY (`id_twit`,`query`),
 				  UNIQUE KEY `id_twit_UNIQUE` (`id_twit`),
 				  UNIQUE KEY `created_at_UNIQUE` (`created_at`)
-				) ENGINE=InnoDB DEFAULT CHARSET=latin1';
+				) ENGINE=InnoDB DEFAULT CHARSET=latin1;';
 
 			Model::getInstance()->exec($sql);
 		}
